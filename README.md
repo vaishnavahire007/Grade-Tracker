@@ -1,104 +1,96 @@
-🎓 Grade Tracker
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Tracker - README</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✅ ";
+      color: green;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .heart {
+      color: red;
+    }
+  </style>
+</head>
+<body>
 
-This is a full-stack web application built with Node.js, Express.js, MongoDB, and a simple HTML/CSS/JS frontend.
-It allows you to add candidates, store their marks, automatically calculate their results & grades, and view candidates based on result filters (ALL, PASS, FAIL).
+  <h1>🎓 Grade Tracker</h1>
+  <p>A full-stack web application to record student marks and automatically generate results and grades. 
+     Built with <strong>Node.js, Express.js, MongoDB</strong>, and a simple <strong>HTML/CSS/JS frontend</strong>.
+  </p>
 
-Features
+  <h2>🚀 Key Functionalities</h2>
+  <ul>
+    <li>Add candidates with marks for three subjects</li>
+    <li>Generate unique student IDs automatically</li>
+    <li>Compute total, percentage, result (PASS/FAIL), and grade instantly</li>
+    <li>Filter students by All / Pass / Fail</li>
+    <li>Display results in a responsive, card-based UI</li>
+  </ul>
 
-Add new candidates with 3 subject marks.
-Automatic ID generation (using initials + sequence).
+  <h2>🛠 Tech Stack</h2>
+  <p><strong>Backend:</strong> Node.js, Express.js, MongoDB (Mongoose)<br>
+     <strong>Frontend:</strong> HTML, CSS, JavaScript
+  </p>
 
-Automatic calculation of:
+  <h2>⚡ Setup & Run</h2>
+  <p><strong>Clone the repository:</strong></p>
+  <pre><code>git clone https://github.com/vaishnavahire007/Grade-Tracker.git
+cd Grade-Tracker
+</code></pre>
 
-✅ Total marks
-✅ Percentage
-✅ Result (PASS/FAIL)
-✅ Grade (Distinction / First Class / Second Class / Third Class / No Grade)
-
-Filter candidates by:
-
-All candidates.
-Passed candidates.
-Failed candidates.
-Beautiful frontend UI with real-time interaction.
-
-Tech Stack
-
-Backend:
-
-Node.js
-Express.js
-MongoDB (Mongoose)
-
-Frontend:
-
-HTML
-CSS
-Vanilla JavaScript
-
-Project Structure
-grade-tracker/
-│
-├── backend/
-│   ├── app.js
-│   ├── controllers/
-│   │   └── candidateController.js
-│   ├── models/
-│   │   ├── candidate.js
-│   │   └── sequence.js
-│   ├── routes/
-│   │   └── candidateRoutes.js
-│   ├── util/
-│   │   ├── db.js
-│   │   └── idGenerator.js
-│   ├── .env
-│   └── package.json
-│
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
-│
-└── README.md
-
-Installation & Setup:
-
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/grade-tracker.git
-cd grade-tracker
-
-2️⃣ Setup Backend
-cd backend
+  <p><strong>Install backend dependencies:</strong></p>
+  <pre><code>cd backend
 npm install
+</code></pre>
 
-Create a .env file:
-MONGO_URI=mongodb://localhost:27017/gradeTrackerDB
+  <p><strong>Create a .env file:</strong></p>
+  <pre><code>MONGO_URI=mongodb://localhost:27017/gradeTrackerDB
 PORT=3000
+</code></pre>
 
-Start the backend server:
-node app.js
+  <p><strong>Start the backend server:</strong></p>
+  <pre><code>node app.js
+</code></pre>
 
-➡️ Server will run at: http://localhost:3000
+  <p>The server will run at: 
+    <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+  </p>
 
-3️⃣ Setup Frontend
+  <footer>
+    👨‍💻 Made with <span class="heart">❤️</span> by <strong>Vaishnav Ahire</strong>
+  </footer>
 
-Simply open frontend/index.html in your browser.
-It will interact with the backend API running on http://localhost:3000.
-
-API Endpoints
-➡️Add Candidate
-
-POST /candidate/add
-
-{
-  "name": "John Doe",
-  "m1": 85,
-  "m2": 90,
-  "m3": 70
-}
-
-Frontend Preview
-
-Add Candidate Form
-Filter by ALL, PASS, FAIL
-Responsive Candidate Cards with Marks, Total, Percentage, Result & Grade
+</body>
+</html>
