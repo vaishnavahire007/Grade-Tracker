@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grade Tracker - README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    pre {
-      background: #272822;
-      color: #f8f8f2;
-      padding: 10px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-    code {
-      font-family: Consolas, "Courier New", monospace;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "✅ ";
-      color: green;
-    }
-    footer {
-      margin-top: 30px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .heart {
-      color: red;
-    }
-  </style>
+
 </head>
 <body>
 
